@@ -1,0 +1,119 @@
+@import "mixins"
+/*==========  Fonts  ==========*/
+@import "fonts"
+/*==========  Libs  ==========*/
+@import "libs"
+
+body
+	margin: 0
+	background-color: #fff
+	+regular
+	height: auto
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+.parallax-container
+	height: 100vh
+	width: 100%
+.no-gutter > [class*='col-']
+	padding-right: 0
+	padding-left: 0
+/*==========  General  ==========*/
+section
+	padding: 100px 0
+.form-floating > label
+	z-index: 0
+.score
+	i
+		color: $gold
+.text-grey
+	color: $grey !important
+/*==========  Header  ==========*/
+header
+	position: fixed
+	top: 0
+	z-index: 10
+	.logo
+		padding: 0 20px
+		font-size: 20px
+		color: $white
+/*==========  Filter  ==========*/
+#filter
+	margin-top: 75px
+	padding-bottom: 0
+	.btn-primary
+		display: flex
+		align-items: center
+		i
+			margin-right: 5px
+			font-size: 10px
+	.rating
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 70px
+		width: 70px
+		background: $grey
+		border-radius: 50%
+		padding: 20px
+		p
+			margin: 0
+/*==========  Reviews  ==========*/
+#reviews
+	height: auto
+	.card
+		img
+			max-width: 300px
+		.stats
+			color: #000
+			i
+				margin: 0 5px
+		.info
+			padding: 40px
+			height: 100%
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+			p
+				margin: 0
+			i
+				margin-right: 5px
+			.score
+				margin-top: 5px
+/*==========  Footer  ==========*/
+footer
+	height: auto
+/*==========  Media  ==========*/
+@import "media"
