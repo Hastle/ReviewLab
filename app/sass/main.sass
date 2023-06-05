@@ -4,11 +4,16 @@
 /*==========  Libs  ==========*/
 @import "libs"
 
+html
+	overflow-y: scroll !important
 body
 	margin: 0
 	background-color: #fff
 	+regular
 	height: auto
+body.modal-open
+	/*overflow: scroll*/
+	padding-right: 0 !important
 a
 	text-decoration: none
 	outline: none
@@ -42,7 +47,6 @@ button:hover
 	background-color: transparent
 	outline-style: none
 button:focus
-	background-color: transparent
 	outline-style: none
 .parallax-container
 	height: 100vh
@@ -51,6 +55,8 @@ button:focus
 	padding-right: 0
 	padding-left: 0
 /*==========  General  ==========*/
+.links
+	cursor: pointer !important
 section
 	padding: 100px 0
 .form-floating > label
@@ -66,6 +72,7 @@ header
 	top: 0
 	z-index: 10
 	.logo
+		+bold
 		padding: 0 20px
 		font-size: 20px
 		color: $white
@@ -115,5 +122,11 @@ header
 /*==========  Footer  ==========*/
 footer
 	height: auto
+/*==========  Modal  ==========*/
+#feedback .modal-dialog
+	min-width: 600px !important
+.modal-dialog-scrollable .modal-content
+	max-height: none !important
+	overflow: visible !important
 /*==========  Media  ==========*/
 @import "media"

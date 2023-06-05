@@ -185,11 +185,20 @@ template {
 }
 
 
+html {
+  overflow-y: scroll !important;
+}
+
 body {
   margin: 0;
   background-color: #fff;
   font-family: "RobotoRegular";
   height: auto;
+}
+
+body.modal-open {
+  /*overflow: scroll*/
+  padding-right: 0 !important;
 }
 
 a {
@@ -241,7 +250,6 @@ button:hover {
 }
 
 button:focus {
-  background-color: transparent;
   outline-style: none;
 }
 
@@ -256,6 +264,10 @@ button:focus {
 }
 
 /*==========  General  ==========*/
+.links {
+  cursor: pointer !important;
+}
+
 section {
   padding: 100px 0;
 }
@@ -279,6 +291,7 @@ header {
   z-index: 10;
 }
 header .logo {
+  font-family: "Robotobold";
   padding: 0 20px;
   font-size: 20px;
   color: #fff;
@@ -361,6 +374,16 @@ header .logo {
 /*==========  Footer  ==========*/
 footer {
   height: auto;
+}
+
+/*==========  Modal  ==========*/
+#feedback .modal-dialog {
+  min-width: 600px !important;
+}
+
+.modal-dialog-scrollable .modal-content {
+  max-height: none !important;
+  overflow: visible !important;
 }
 
 /*==========  Media  ==========*/
